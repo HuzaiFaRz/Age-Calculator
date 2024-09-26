@@ -40,6 +40,11 @@ input[type="date"]::selection {
   border: none;
   cursor: pointer;
 }
+
+#Btn:hover {
+  background-color: black;
+  color: white;
+}
 #AgeResult {
   display: flex;
   justify-content: center;

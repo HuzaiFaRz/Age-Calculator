@@ -3,6 +3,10 @@ var ageCalculatorBtn = document.getElementById("Btn");
 var ageResult = document.getElementById("AgeResult");
 
 ageCalculatorBtn.addEventListener("click", () => {
+  if (!ageDate.value) {
+    alert("Give Birthday");
+    return;
+  }
   var birthDate = new Date(ageDate.value);
   var currentDate = new Date();
   var ageInMilliseconds = currentDate - birthDate;
